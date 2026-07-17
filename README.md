@@ -23,7 +23,7 @@ This portfolio website was developed as part of my frontend learning journey at 
 ## 📂 Project Structure
 
 ```
-Portfolio-Website/
+DECODE-LABS/
 │
 ├── assets/
 │   └── images/
