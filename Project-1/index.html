@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamidi Charan - Frontend Developer</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h2 class="logo">Charan.dev</h2>
+    <nav>
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+      <h1>Hi, I'm Charan</h1>
+      <p>A frontend developer learning HTML and CSS.</p>
+      <a href="#projects" class="btn">See my Projects</a>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I am currently learning frontend development at DecodeLabs.
+        I enjoy building simple webpages using HTML and CSS and I am
+        excited to keep improving my skills.
+      </p>
+    </section>
+
+    <!-- PROJECTS SECTION (using Grid) -->
+    <section id="projects" class="projects">
+      <h2>My Projects</h2>
+      <div class="project-grid">
+
+        <div class="project-card">
+          <img src="crime-rate-prediction.jpeg" alt="Image of the Crime Rate Prediction Project" width="300" height="180">
+          <h3>Crime Rate Prediction</h3>
+          <p>Crime rate prediction uses historical data to forecast the crime rate in a particular area..</p>
+        </div>
+
+        <div class="project-card">
+          <img src="portfolio.jpeg" alt="Image of the Portfolio Project" width="300" height="180">
+          <h3>Portfolio</h3>
+          <p>A portfolio is a collection of work samples designed to showcase your skills or grow your wealth..</p>
+        </div>
+
+        <div class="project-card">
+          <img src="web-scarping.jpeg" alt="Image of the Web Scraping Project" width="300" height="180">
+          <h3>Web Scraping</h3>
+          <p>Web scraping is an automated method used to extract large amounts of unstructured data from websites and convert it into a structured format..</p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 Mamidi Charan. Made for DecodeLabs Project 1.</p>
+  </footer>
+
+</body>
+</html>
