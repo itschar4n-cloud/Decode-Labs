@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fernweg Trail Co.</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="nav-container">
+      <h1 class="logo">Fernweg</h1>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- new: dark mode toggle button -->
+      <button id="themeToggle" class="theme-btn">🌙 Dark Mode</button>
+    </div>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Gear Built for the Trail</h2>
+      <p>Small-batch hiking gear, tested by us before it's sold to you.</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <h2>Our Story</h2>
+      <p>
+        Fernweg started in 2016 when three friends got tired of gear that
+        looked great in a store but fell apart on the trail. Since then,
+        every product we sell has been tested by our own team on real hikes
+        before it ever goes up for sale.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section class="products" id="products">
+    <div class="container">
+      <h2>Our Products</h2>
+
+      <div class="product-grid">
+
+        <div class="product-card">
+          <div class="product-img">🎒</div>
+          <h3>Ridgeline 42L Pack</h3>
+          <p class="price">$268</p>
+
+          <!-- quantity selector - interactive -->
+          <div class="quantity-box">
+            <button class="qty-btn minus" data-target="qty1">-</button>
+            <span class="qty-value" id="qty1">1</span>
+            <button class="qty-btn plus" data-target="qty1">+</button>
+          </div>
+          <button class="btn add-cart-btn" data-name="Ridgeline 42L Pack" data-price="268" data-qty="qty1">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🧥</div>
+          <h3>Contour Rain Shell</h3>
+          <p class="price">$189</p>
+
+          <div class="quantity-box">
+            <button class="qty-btn minus" data-target="qty2">-</button>
+            <span class="qty-value" id="qty2">1</span>
+            <button class="qty-btn plus" data-target="qty2">+</button>
+          </div>
+          <button class="btn add-cart-btn" data-name="Contour Rain Shell" data-price="189" data-qty="qty2">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🥾</div>
+          <h3>Talus Trekking Poles</h3>
+          <p class="price">$96</p>
+
+          <div class="quantity-box">
+            <button class="qty-btn minus" data-target="qty3">-</button>
+            <span class="qty-value" id="qty3">1</span>
+            <button class="qty-btn plus" data-target="qty3">+</button>
+          </div>
+          <button class="btn add-cart-btn" data-name="Talus Trekking Poles" data-price="96" data-qty="qty3">
+            Add to Cart
+          </button>
+        </div>
+
+        <div class="product-card">
+          <div class="product-img">🏕️</div>
+          <h3>Basecamp Quilt</h3>
+          <p class="price">$225</p>
+
+          <div class="quantity-box">
+            <button class="qty-btn minus" data-target="qty4">-</button>
+            <span class="qty-value" id="qty4">1</span>
+            <button class="qty-btn plus" data-target="qty4">+</button>
+          </div>
+          <button class="btn add-cart-btn" data-name="Basecamp Quilt" data-price="225" data-qty="qty4">
+            Add to Cart
+          </button>
+        </div>
+
+      </div>
+
+      <!-- cart summary - updates dynamically -->
+      <div class="cart-summary">
+        <p>🛒 Items in cart: <span id="cartCount">0</span></p>
+        <p>Total: $<span id="cartTotal">0</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ SECTION (accordion) ===== -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <h2>Frequently Asked Questions</h2>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          Do you ship internationally?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>Yes, we ship to most countries. Shipping cost is calculated at checkout based on your location.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          What is your return policy?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>You can return any unused product within 30 days for a full refund. Gear that's been on a hike gets a free repair instead.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question">
+          How do I choose the right pack size?
+          <span class="faq-icon">+</span>
+        </button>
+        <div class="faq-answer">
+          <p>For day hikes, 20-30L is usually enough. For multi-day trips, look at our 42L Ridgeline pack.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer id="contact">
+    <div class="container">
+      <p>&copy; 2026 Fernweg Trail Co. All rights reserved.</p>
+      <p>Email: hello@fernwegtrail.co | Phone: (509) 555-0142</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
